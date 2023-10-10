@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/*  INICIO DEL HEADER CON SU NAVBAR */
+header .container {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.container li {
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+.container li a {
+    color: white;
+}
+.container .edit-item {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+.container li a:hover {
+    color: #D9A84E;
+}
+.edit-item:hover {
+    color: #D9A84E;
+    border: 0.5px solid #D9A84E;
+    cursor: pointer;
+}
+
+/* FIN DEL HEADER Y SU NAVBAR */
+
+
+main {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(244, 169, 169, 0.454);
+}
+
+
+
+
+/* EDICION DEL FOOTER */
+.footer-container {
+    width: 100%;
+    height: 640px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container-info {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR IZQUIERDO */
+.container-left {
+    width: 50%;
+    height: 480px;
+}
+.container-left h2 {
+    margin: 35px 0;
+    font-size: 35px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-left h3 {
+    font-size: 20px;
+    margin: 13px 0 4px 230px;
+    color: #BF8417;
+}
+.container-left p {
+    font-size: 17px;
+    margin: 0 0 4px 230px;
+    color: white;
+}
+
+/* CONTENEDOR DERECHO */
+.container-right {
+    width: 50%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LINEA DIVISORA */
+hr {
+    width: 90%;
+    border: 2px solid rgba(128, 128, 128, 0.643);
+    margin-left: 90px;
+
+}
+
+.container-social {
+    width: 100%;
+    height: 156px;
+}
+.logo-footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-footer img {
+    width: 95px;
+    height: 100px;
+}
+
+.redes-sociales {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
+    margin-right: 42px;
+    filter: invert();
+    cursor: pointer;
+}
