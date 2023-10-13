@@ -67,7 +67,8 @@ main {
 .main-container-inicio {
     width: 100%;
     height: 700px;
-    background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png");
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
     background-position: center center;
     background-image: no-repeat;
     background-size: cover;
