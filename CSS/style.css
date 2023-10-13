@@ -45,13 +45,12 @@ header .container {
     border: 0.5px solid #D9A84E;
     cursor: pointer;
 }
-
 /* FIN DEL HEADER Y SU NAVBAR */
 
 /*  ESTRUCTURA DEL MAIN */
 main {
     width: 100%;
-    height: 1200px;
+    height: 5000px;
     background-color: rgba(244, 169, 169, 0.454);
 }
 /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
@@ -59,14 +58,14 @@ main {
 /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
 .main-container {
     width: 100%;
-    height: 1000px;
+    height: 1050px;
     background-color: rgba(172, 255, 47, 0.666);
 }
 
 /* ESTRUCTURA DEL CONTENEDOR FONDO */
 .main-container-inicio {
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-image: url(../assets/fondo.png);
     /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
     background-position: center center;
@@ -252,10 +251,60 @@ main {
 
 /* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
 .linea {
-    width: 80%;
-    border: 1px solid rgb(139, 138, 138);
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 70px;
+    bottom: -240px;
 }
 
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 50%;
+    height: 500px;
+    background-color: #593A15;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 18px;
+    color: white;
+}
+.container-history p {
+    width: 80%;
+    font-size: 19px;
+    padding: 0 15px 0 15px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 50%;
+    height: 500px;
+}
+.img-history {
+    width: 700px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    top: 1170px;
+    left: 630px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+}
 
 
 
