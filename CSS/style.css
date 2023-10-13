@@ -48,12 +48,258 @@ header .container {
 
 /* FIN DEL HEADER Y SU NAVBAR */
 
-
+/*  ESTRUCTURA DEL MAIN */
 main {
     width: 100%;
-    height: 500px;
+    height: 1200px;
     background-color: rgba(244, 169, 169, 0.454);
 }
+/* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+/* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+.main-container {
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(172, 255, 47, 0.666);
+}
+
+/* ESTRUCTURA DEL CONTENEDOR FONDO */
+.main-container-inicio {
+    width: 100%;
+    height: 700px;
+    background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png");
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+}
+/* ESTRUCTURA DEL CONTENEDOR LOGO */
+.main-logo {
+    width: 180px;
+    height: 180px;
+    margin-left: 60px
+}
+.main-logo img {
+    width: 180px;
+    height: 180px;
+    margin-left: 60px;
+    opacity: 0.6;
+}
+/* ESTRUCTURA DEL H1 MAIN */
+.main-container-inicio h1 {
+    font-size: 42px;
+    margin: 80px 0 170px 110px;
+}
+/* ESTRUCTURA DEL H2 MAIN */
+.main-container-inicio h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+/* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+.main-container-services {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    
+}
+
+/* ESTILO CONTENEDOR CERAMICO */
+.main-info-ceramico {
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    left: 100px;
+    bottom: -200px;
+    border: 1px solid black;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-ceramico img {
+    width: 85px;
+    height: 85px;
+    margin: 15px;
+}
+.main-info-ceramico h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-ceramico p {
+    width: 280px;
+    height: 160px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.btn-services {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    left: 430px;
+    bottom: -200px;
+    border: 1px solid black;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 85px;
+    height: 85px;
+    margin: 15px;
+}
+.main-info-spafull h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 280px;
+    height: 160px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    left: 750px;
+    bottom: -200px;
+    border: 1px solid black;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 85px;
+    height: 85px;
+    margin: 15px;
+}
+.main-info-interior-full h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 280px;
+    height: 160px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    left: 1070px;
+    bottom: -200px;
+    border: 1px solid black;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 85px;
+    height: 85px;
+    margin: 15px;
+}
+.main-info-chasis-full h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 280px;
+    height: 160px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+.linea {
+    width: 80%;
+    border: 1px solid rgb(139, 138, 138);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
