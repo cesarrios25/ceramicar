@@ -392,6 +392,65 @@ main {
     cursor: pointer;
 }
 
+/* ESTILO DEL CUARTO SECTION DEL MAIL, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 740px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 20px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 600px;
+}
+.info h2 {
+    font-size: 38px;
+    padding: 14px;
+    color: white;
+}
+.info p {
+    width: 80%;
+    font-size: 22px;
+    padding: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    width: 50%;
+    height: 600px;
+    background-image: url(../assets/nosotros.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
 
 
 
