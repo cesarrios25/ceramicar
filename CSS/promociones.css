@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/*  INICIO DEL HEADER CON SU NAVBAR */
+header .container {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.container li {
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}
+.container li a {
+    color: white;
+}
+.container .edit-item {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+.container li a:hover {
+    color: #D9A84E;
+}
+.edit-item:hover {
+    color: #D9A84E;
+    border: 0.5px solid #D9A84E;
+    cursor: pointer;
+}
+/* FIN DEL HEADER Y SU NAVBAR */
+
+
+
+
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 306px;
+    background-color: black;
+}
+
+.container-info {
+    width: 100%;
+    height: 200px;
+}
+.tittle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #BF8417;
+}
+.tittle h2 {
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+.container-info-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-footer {
+    width: 100%;
+    height: 150px;
+    margin: 90px 0px 20px 30px;
+}
+.info-footer h3 {
+    color: #BF8417;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.info-footer p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+hr {
+    width: 80%;
+    height: 0.2px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
