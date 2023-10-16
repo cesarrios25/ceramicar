@@ -713,7 +713,7 @@ main {
     height: 290px;
     position: absolute;
     left: 16px;
-    bottom: 51px;
+    bottom: 120px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -761,7 +761,7 @@ main {
     height: 290px;
     position: absolute;
     left: 202px;
-    bottom: 51px;
+    bottom: 120px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -800,7 +800,7 @@ main {
     height: 290px;
     position: absolute;
     left: 16px;
-    bottom: -255px;
+    bottom: -185px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -839,7 +839,7 @@ main {
     height: 290px;
     position: absolute;
     left: 202px;
-    bottom: -255px;
+    bottom: -185px;
     border: none;
     background-color: #6C5711;
     display: flex;
