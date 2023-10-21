@@ -39,11 +39,11 @@ header .container {
     color: white;
 }
 .container li a:hover {
-    color: #D9A84E;
+    color: #ffbf00;
     font-size: 15px;
 }
 .edit-item:hover {
-    color: #D9A84E;
+    color: #ffbf00;
     border: 0.5px solid #D9A84E;
     cursor: pointer;
 }
@@ -62,6 +62,7 @@ main {
     width: 100%;
     height: 1050px;
     background-color: rgba(172, 255, 47, 0.666);
+    position: relative;
 }
 
 /* ESTRUCTURA DEL CONTENEDOR FONDO */
@@ -73,6 +74,7 @@ main {
     background-position: center center;
     background-image: no-repeat;
     background-size: cover;
+    position: relative;
 }
 /* ESTRUCTURA DEL CONTENEDOR LOGO */
 .main-logo {
@@ -102,8 +104,9 @@ main {
     width: 100%;
     height: 300px;
     background-color: black;
+    /* background-color: #ffbf0096; */
     display: flex;
-    
+    position: relative;
 }
 
 /* ESTILO CONTENEDOR CERAMICO */
@@ -111,14 +114,18 @@ main {
     width: 300px;
     height: 390px;
     position: absolute;
-    left: 100px;
-    bottom: -200px;
+    left: 120px;
+    /* bottom: -243px; */
     border: none;
-    background-color: #6C5711;
+    /* top: 200px; */
+    top: -150px;
+    /* background-color: #6C5711; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
 }
 .main-info-ceramico img {
     width: 85px;
@@ -140,7 +147,8 @@ main {
     line-height: 1.5;
 }
 .main-info-ceramico:hover {
-    box-shadow: 7px 2px 25px #ffffff83;
+    /* box-shadow: 7px 2px 25px #ffffff83; */
+    box-shadow: 7px 2px 25px #daa520;
     cursor: pointer;
 }
 .btn-services {
@@ -151,6 +159,10 @@ main {
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    background-color: #daa520;
+}
+.btn-services:hover {
+    background-color: #F2DC99;
 }
 
 /* ESTILO CONTENEDOR SPA FULL */
@@ -158,14 +170,19 @@ main {
     width: 300px;
     height: 390px;
     position: absolute;
-    left: 430px;
-    bottom: -200px;
-    border: 1px solid black;
-    background-color: #6C5711;
+    left: 480px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -150px;
+    /* background-color: #6C5711; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
+    /* box-shadow: 3px 6px 25px #daa520; */
+    box-shadow: 1px 1px 22px #daa520;
 }
 .main-info-spafull img {
     width: 85px;
@@ -187,7 +204,9 @@ main {
     line-height: 1.5;
 }
 .main-info-spafull:hover {
-    box-shadow: 7px 2px 25px #ffffff83;
+    /* box-shadow: 7px 2px 25px #ffffff83; */
+    /* box-shadow: 7px 12px 25px #daa520; */
+    box-shadow: 7px 2px 25px #daa520;
     cursor: pointer;
 }
 
@@ -196,14 +215,18 @@ main {
     width: 300px;
     height: 390px;
     position: absolute;
-    left: 750px;
-    bottom: -200px;
-    border: 1px solid black;
-    background-color: #6C5711;
+    left: 840px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -150px;
+    /* background-color: #6C5711; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
 }
 .main-info-interior-full img {
     width: 85px;
@@ -225,7 +248,8 @@ main {
     line-height: 1.5;
 }
 .main-info-interior-full:hover {
-    box-shadow: 7px 2px 25px #ffffff83;
+    /* box-shadow: 7px 2px 25px #ffffff83; */
+    box-shadow: 7px 2px 25px #daa520;
     cursor: pointer;
 }
 
@@ -234,14 +258,19 @@ main {
     width: 300px;
     height: 390px;
     position: absolute;
-    left: 1070px;
-    bottom: -200px;
-    border: 1px solid black;
-    background-color: #6C5711;
+    left: 1200px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -150px;
+    /* background-color: #6C5711; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
+    /* box-shadow: 3px 6px 25px #daa520; */
+    box-shadow: 1px 1px 22px #daa520;
 }
 .main-info-chasis-full img {
     width: 85px;
@@ -263,7 +292,8 @@ main {
     line-height: 1.5;
 }
 .main-info-chasis-full:hover {
-    box-shadow: 7px 2px 25px #ffffff83;
+    /* box-shadow: 7px 2px 25px #ffffff83; */
+    box-shadow: 7px 2px 25px #daa520;
     cursor: pointer;
 }
 
@@ -282,47 +312,60 @@ main {
 .main-container_history {
     width: 100%;
     height: 500px;
-    background-color: black;
+    /* background-color: black; */
+    /* background-color: white; */
+     /* background: linear-gradient(70deg, #D9A84E, #D9A84E); */
+     background-color: black;
     display: flex;
+    position: relative;
 }
 
 /* ESTILO DIV IZQUIERDA */
 .container-history {
     width: 50%;
     height: 500px;
-    background-color: #6C5711;
+    /* background-color: #6C5711; */
+    background-color: white;
     text-align: center;
 }
 .container-history h1 {
     font-size: 28px;
     padding: 18px;
-    color: white;
+    /* color: white; */
+    color: #000000;
 }
 .container-history p {
     width: 80%;
-    font-size: 19px;
+    font-size: 20px;
     padding: 0 15px 0 15px;
     line-height: 1.4;
-    color: #000000;
+    color: #593A15;
+    font-weight: 600;
 }
 
 /* ESTILO DIV DERECHA */
 .container-foto {
     width: 50%;
     height: 500px;
+    position: relative;
+    /* box-shadow: 4px 8px 25px black; */
+    box-shadow: 4px 8px 25px #ffbf00;
 }
 .img-history {
     width: 700px;
     height: 400px;
     background-color: red;
-    position: absolute;
+    /* position: absolute;
     top: 1170px;
-    left: 630px;
+    left: 630px; */
     background-image: url(../assets/historia.jpeg);
     background-position: center center;
     background-image: no-repeat;
     background-size: cover;
     border-radius: 8px;
+    position: absolute;
+    top: 50px;
+    left: -100px;
 }
 
 /* ESTILO DE LA TERCERA SECTION DEL MAIN */
@@ -331,30 +374,38 @@ main {
 .container-promo {
     width: 100%;
     height: 1600px;
-    background-color: black;
+    /* background-color: black; */
+    background-color: white;
 }
 .container-promo h1 {
     font-size: 40px;
     padding: 30px 30px 10px 30px;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
+    /* color: #ffbf00; */
+    color: #BF8417;
 }
 .container-promo p {
     font-size: 24px;
     text-align: center;
     padding-bottom: 22px;
-    color: #fff;
+    /* color: #fff; */
+    /* color: #ffbf00; */
+    color: #BF8417;
 }
 .containers-service_promo {
     width: 100%;
     height: 700px;
-    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    /* background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355)); */
+    background-color: white;
     margin-top: 32px;
     display: flex;
     justify-content: center;
 }
 .promo-item:hover {
-    box-shadow: 7px 2px 25px #F2DC99;
+    /* box-shadow: 7px 2px 25px #F2DC99; */
+    /* box-shadow: 14px 12px 28px #ffbf00; */
+    box-shadow: 15px 15px 28px #ffbf00;
 }
 .promo-item {
     width: 340px;
@@ -372,7 +423,7 @@ main {
 .promo-item h2 {
     font-size: 28px;
     padding: 12px;
-    color: #fff;
+    color: #ffbf00;
 }
 .promo-item p {
     font-size: 18px;
@@ -392,9 +443,10 @@ main {
     border: none;
     font-size: 14px;
     cursor: pointer;
+    background-color: #F2DC99;
 }
 .btn-promo_item:hover {
-    background-color: #F2DC99;
+    background-color: #ffbf00;
     color: black;
     font-size: 16px;
 }
@@ -425,7 +477,8 @@ main {
 .container-nosotros_info {
     width: 100%;
     height: 600px;
-    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    /* background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3)); */
+    background-color: white;
     display: flex;
 }
 .info {
@@ -441,7 +494,8 @@ main {
     font-size: 24px;
     padding: 45px;
     line-height: 1.5;
-    color: white;
+    /* color: white; */
+    color:#000000;
     margin: 0 auto;
 }
 
@@ -483,13 +537,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+    /* background: linear-gradient(70deg, #6c5711, #3b3b3a); */
+    background-color: white;
 }
 .container-contacto h2 {
     font-size: 36px;
     text-align: center;
     padding: 30px;
-    color: white;
+    color: #ffbf00;
 }
 
 .btn-contacto {
@@ -498,11 +553,13 @@ main {
     padding: 8px;
     margin-top: 15px;
     border: 2px solid white;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
+    /* background-color: black; */
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    box-shadow: 3px 4px 15px black;
 }
 .btn-contacto:hover {
     width: 220px;
@@ -603,8 +660,6 @@ hr {
 
 /*  RESPONSIVE DE LA PAGINA */
 
-
-
 /* HEADER */
 @media (max-width: 768px) {
     header .container {
@@ -647,6 +702,7 @@ hr {
         cursor: pointer;
     }
     /* FIN DEL HEADER Y SU NAVBAR */
+
 
     /* MAIN */
 
@@ -1136,18 +1192,4 @@ main {
     margin-right: 30px;
     filter: invert();
 }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
