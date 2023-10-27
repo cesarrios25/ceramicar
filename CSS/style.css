@@ -349,7 +349,7 @@ main {
     height: 500px;
     position: relative;
     /* box-shadow: 4px 8px 25px black; */
-    box-shadow: 4px 8px 25px #ffbf00;
+    box-shadow: 4px 3px 25px #ffbf00;
 }
 .img-history {
     width: 700px;
@@ -374,8 +374,8 @@ main {
 .container-promo {
     width: 100%;
     height: 1600px;
-    /* background-color: black; */
-    background-color: white;
+    background-color: black;
+    /* background-color: white; */
 }
 .container-promo h1 {
     font-size: 40px;
@@ -405,7 +405,8 @@ main {
 .promo-item:hover {
     /* box-shadow: 7px 2px 25px #F2DC99; */
     /* box-shadow: 14px 12px 28px #ffbf00; */
-    box-shadow: 15px 15px 28px #ffbf00;
+    /* box-shadow: 15px 15px 28px #ffbf00; */
+    box-shadow: 8px 8px 23px #ffbf00;
 }
 .promo-item {
     width: 340px;
@@ -523,7 +524,8 @@ main {
     width: 50%;
     height: 300px;
     background-color: green;
-    background-image: url(../assets/asistencia.jpeg);
+    /* background-image: url(../assets/asistencia.jpeg); */
+    background-image: url(../assets/was.jpeg);
     background-position: center center;
     background-image: no-repeat;
     background-size: cover;
@@ -658,10 +660,14 @@ hr {
 
 
 
+
+
+
+
 /*  RESPONSIVE DE LA PAGINA */
 
-/* HEADER */
-@media (max-width: 768px) {
+@media (min-width: 390px) and (max-width: 480px) {
+
     header .container {
         width: 100%;
         height: 50px;
@@ -707,23 +713,23 @@ hr {
     /* MAIN */
 
     /*  ESTRUCTURA DEL MAIN */
-main {
+        main {
     width: 100%;
     /* height: 4190px; */
-    height: 6853px;
+    height: 6667px;
     background-color: rgba(244, 169, 169, 0.454);
-}
-/* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
 
-/* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
-.main-container {
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
     width: 100%;
-    height: 1030px;
+    height: 880px;
     background-color: rgba(172, 255, 47, 0.666);
-}
+    }
 
-/* ESTRUCTURA DEL CONTENEDOR FONDO */
-.main-container-inicio {
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
     width: 100%;
     height: 300px;
     background-image: url(../assets/fondo.png);
@@ -731,64 +737,69 @@ main {
     background-position: center center;
     background-image: no-repeat;
     background-size: cover;
-}
-/* ESTRUCTURA DEL CONTENEDOR LOGO */
-.main-logo {
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
     width: 80px;
     height: 80px;
     margin-left: 12px
-}
-.main-logo img {
+    }
+    .main-logo img {
     width: 80px;
     height: 80px;
     margin-left: 12px;
     opacity: 0.6;
-}
-/* ESTRUCTURA DEL H1 MAIN */
-.main-container-inicio h1 {
-    font-size: 22px;
-    margin: 140px 0 60px 30px;
-}
-/* ESTRUCTURA DEL H2 MAIN */
-.main-container-inicio h2 {
-    font-size: 18px;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 16px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 16px;
     text-align: center;
-    color: white;
-}
+    color: black;
+    }
 
-/* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
-.main-container-services {
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
     width: 100%;
-    height: 730px;
+    height: 580px;
     background-color: black;
-}
+    position: relative;
+    }
 
-/* ESTILO CONTENEDOR CERAMICO */
-.main-info-ceramico {
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
     width: 170px;
     height: 290px;
     position: absolute;
     left: 16px;
-    bottom: 120px;
+    /* bottom: -243px; */
     border: none;
+    /* top: 200px; */
+    top: -62px;
     background-color: #6C5711;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 7px;
-}
-.main-info-ceramico img {
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
     width: 40px;
     height: 40px;
     margin: 10px;
-}
-.main-info-ceramico h2 {
+    }
+    .main-info-ceramico h2 {
     font-size: 20px;
     margin-bottom: 12px;
     color: white;
     letter-spacing: 1px;
-}
-.main-info-ceramico p {
+    }
+    .main-info-ceramico p {
     width: 160px;
     height: 150px;
     margin-bottom: 5px;
@@ -796,12 +807,12 @@ main {
     font-size: 14px;
     line-height: 1.3;
     text-align: center;
-}
-.main-info-ceramico:hover {
+    }
+    .main-info-ceramico:hover {
     box-shadow: 7px 2px 25px #ffffff83;
     cursor: pointer;
-}
-.btn-services {
+    }
+    .btn-services {
     width: 80px;
     height: 30px;
     padding: 5px;
@@ -809,7 +820,7 @@ main {
     border-radius: 12px;
     border: none;
     cursor: pointer;
-}
+    }
 
 /* ESTILO CONTENEDOR SPA FULL */
 .main-info-spafull {
@@ -817,7 +828,8 @@ main {
     height: 290px;
     position: absolute;
     left: 202px;
-    bottom: 120px;
+    /* bottom: 120px; */
+    top: -62px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -856,7 +868,8 @@ main {
     height: 290px;
     position: absolute;
     left: 16px;
-    bottom: -185px;
+    /* bottom: -185px; */
+    top: 248px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -895,7 +908,8 @@ main {
     height: 290px;
     position: absolute;
     left: 202px;
-    bottom: -185px;
+    /* bottom: -185px; */
+    top: 248px;
     border: none;
     background-color: #6C5711;
     display: flex;
@@ -934,7 +948,7 @@ main {
     border: 1px solid rgb(249, 246, 246);
     position: absolute;
     left: 20px;
-    bottom: -210px;
+    bottom: -70px;
 }
 
 /* ESTILO DEL CONTENEDOR 2 DEL MAIN */
@@ -946,24 +960,26 @@ main {
     background-color: black;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 /* ESTILO DIV IZQUIERDA */
 .container-history {
     width: 100%;
-    height: 466px;
+    height: 500px;
     background-color: #6C5711;
     text-align: center;
 }
 .container-history h1 {
     font-size: 28px;
-    padding: 18px;
-    color: white;
+    padding: 16px;
+    color: #000000;
 }
+
 .container-history p {
     width: 90%;
     font-size: 19px;
-    padding: 0 15px 0 15px;
+    padding: 0 11px 0 11px;
     line-height: 1;
     color: #000000;
     margin: 0 auto;
@@ -972,14 +988,15 @@ main {
 /* ESTILO DIV DERECHA */
 .container-foto {
     width: 100%;
-    height: 286px;
+    height: 261px;
 }
 .img-history {
     width: 390px;
     height: 260px;
     background-color: red;
     position: absolute;
-    top: 1570px;
+    /* top: 1570px; */
+    top: 0px;
     left: 0px;
     background-image: url(../assets/historia.jpeg);
     background-position: center center;
@@ -1054,11 +1071,11 @@ main {
 
 .container-nosotros_principal {
     width: 100%;
-    height: 740px;
+    height: 705px;
 }
 .container-nosotros {
     width: 100%;
-    height: 190px;
+    height: 155px;
     background-color: black;
     text-align: center;
 }
@@ -1153,7 +1170,7 @@ main {
 /* EDICION DEL FOOTER */
 .container {
     width: 100%;
-    height: 169px;
+    height: 110px;
     background-color: black;
 }
 
@@ -1193,3 +1210,3131 @@ main {
     filter: invert();
 }
 }
+
+
+
+
+@media (min-width: 430px) and (max-width: 440px) {
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+.main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 33px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 235px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 33px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 235px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+}
+
+
+
+
+
+@media (min-width: 470px) and (max-width: 480px) {
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+.main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 26px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 252px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 26px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 252px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+}
+
+
+
+
+/* PRINCIPAL */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #D9A84E;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #D9A84E;
+        border: 0.5px solid #D9A84E;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+        main {
+    width: 100%;
+    /* height: 4190px; */
+    height: 6667px;
+    background-color: rgba(244, 169, 169, 0.454);
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(172, 255, 47, 0.666);
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 18px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 26px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 250px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 26px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 250px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: #6C5711;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #000000;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    /* top: 1570px; */
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #fff;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 7px 2px 25px #F2DC99;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-promo_item:hover {
+    background-color: #F2DC99;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+
+@media (min-width: 530px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #D9A84E;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #D9A84E;
+        border: 0.5px solid #D9A84E;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+        main {
+    width: 100%;
+    /* height: 4190px; */
+    height: 6667px;
+    background-color: rgba(244, 169, 169, 0.454);
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(172, 255, 47, 0.666);
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 18px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 43px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 293px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 43px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 293px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: #6C5711;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #000000;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    /* top: 1570px; */
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #fff;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 7px 2px 25px #F2DC99;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-promo_item:hover {
+    background-color: #F2DC99;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+
+@media (min-width: 561px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #D9A84E;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #D9A84E;
+        border: 0.5px solid #D9A84E;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+        main {
+    width: 100%;
+    /* height: 4190px; */
+    height: 6667px;
+    background-color: rgba(244, 169, 169, 0.454);
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(172, 255, 47, 0.666);
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 20px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 43px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 300px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 43px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 300px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: #6C5711;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #000000;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    /* top: 1570px; */
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #fff;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 7px 2px 25px #F2DC99;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-promo_item:hover {
+    background-color: #F2DC99;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #D9A84E;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #D9A84E;
+        border: 0.5px solid #D9A84E;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+        main {
+    width: 100%;
+    /* height: 4190px; */
+    height: 6667px;
+    background-color: rgba(244, 169, 169, 0.454);
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(172, 255, 47, 0.666);
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 20px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 56px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 327px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 56px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 327px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: #6C5711;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #000000;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    /* top: 1570px; */
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #fff;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 7px 2px 25px #F2DC99;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-promo_item:hover {
+    background-color: #F2DC99;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+/* HORIZONTAL CONTENEDORES */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #D9A84E;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #D9A84E;
+        border: 0.5px solid #D9A84E;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+        main {
+    width: 100%;
+    /* height: 4190px; */
+    height: 6667px;
+    background-color: rgba(244, 169, 169, 0.454);
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    background-color: rgba(172, 255, 47, 0.666);
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    /* background-image: url("file:///Users/cesarrios/Desktop/proyecto-pagina-introduccion/assets/fondo.png"); */
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 20px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 56px;
+    /* bottom: -243px; */
+    border: none;
+    /* top: 200px; */
+    top: -62px;
+    background-color: #6C5711;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 22px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+.main-info-spafull {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 327px;
+    /* bottom: 120px; */
+    top: -62px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-spafull:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+.main-info-interior-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 56px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 215px;
+    height: 290px;
+    position: absolute;
+    left: 327px;
+    /* bottom: -185px; */
+    top: 248px;
+    border: none;
+    background-color: #6C5711;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 25px #ffffff83;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+.linea {
+    width: 90%;
+    border: 1px solid rgb(249, 246, 246);
+    position: absolute;
+    left: 20px;
+    bottom: -70px;
+}
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: #6C5711;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #000000;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    background-color: red;
+    position: absolute;
+    /* top: 1570px; */
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 26px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #fff;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #fff;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background: linear-gradient(70deg, #6c5711a1, rgba(69, 69, 69, 0.355));
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 7px 2px 25px #F2DC99;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-promo_item:hover {
+    background-color: #F2DC99;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: white;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: white;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO MISION Y VISION */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(70deg, #6c5711, rgb(3, 3, 3));
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: white;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(70deg, #6c5711, #3b3b3a);
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+
