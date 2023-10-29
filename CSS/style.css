@@ -948,7 +948,7 @@ hr {
     background-color: black;
 }
 .container-promo h1 {
-    font-size: 26px;
+    font-size: 28px;
     padding: 30px 30px 10px 30px;
     text-align: center;
     color: #BF8417;
@@ -982,6 +982,11 @@ hr {
     padding: 8px;
     border-radius: 8px;
     margin: auto;
+}
+.promo-item h2 {
+    font-size: 26px;
+    padding: 11px;
+    color: #ffbf00;
 }
 .btn-promo_item {
     width: 120px;
