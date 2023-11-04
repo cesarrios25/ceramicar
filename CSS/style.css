@@ -2752,14 +2752,57 @@ hr {
 /* EDICION DEL FOOTER */
 .container {
     width: 100%;
-    height: 110px;
+    height: 306px;
     background-color: black;
 }
 
 .container-info {
-    display: none;
+    width: 100%;
+    height: 200px;
+}
+.tittle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #BF8417;
+}
+.tittle h2 {
+    font-size: 26px;
+    margin-top: 10px;
 }
 
+.container-info-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-footer {
+    width: 100%;
+    height: 150px;
+    margin: 90px 0px 20px 30px;
+}
+.info-footer h3 {
+    color: #BF8417;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.info-footer p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+hr {
+    width: 80%;
+    height: 0.2px;
+    margin: 0 auto;
+    background-color: #fff;
+}
 
 /* SEGUNDA SECTION FOOTER */
 .container-section-two {
@@ -2768,7 +2811,7 @@ hr {
 }
 .container-logo {
     width: 100%;
-    height: 58px;
+    height: 68px;
     display: flex;
     justify-content: center;
     align-items: center;
