@@ -968,7 +968,6 @@ hr {
     margin-top: 1px;
     display: grid;
     grid-template-rows: auto;
-    background-color: green;
 }
 .promo-item:hover {
     box-shadow: 8px 8px 23px #ffbf00;
