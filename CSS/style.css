@@ -662,7 +662,7 @@ hr {
     /*  ESTRUCTURA DEL MAIN */
     main {
     width: 100%;
-    height: 6667px;
+    height: 5263px;
     }
     /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
 
@@ -696,7 +696,7 @@ hr {
     /* ESTRUCTURA DEL H1 MAIN */
     .main-container-inicio h1 {
     font-size: 16px;
-    margin: 33px 0 50px 30px;
+    margin: 33px 0 45px 120px;
     }
     /* ESTRUCTURA DEL H2 MAIN */
     .main-container-inicio h2 {
@@ -709,7 +709,7 @@ hr {
     .main-container-services {
     width: 100%;
     height: 580px;
-    background-color: black;
+    background-color: white;
     position: relative;
     }
 
@@ -788,7 +788,7 @@ hr {
     }
     .main-info-spafull h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
@@ -798,7 +798,7 @@ hr {
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -838,7 +838,7 @@ hr {
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 0.9;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -868,17 +868,17 @@ hr {
 }
 .main-info-chasis-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 160px;
     height: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 0.9;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -945,7 +945,7 @@ hr {
 /* CONTENEDOR PRINCIPAL PROMO */
 .container-promo {
     width: 100%;
-    height: 4132px;
+    height: 2725px;
     background-color: black;
 }
 .container-promo h1 {
@@ -963,11 +963,12 @@ hr {
 
 .container-service-item-promo {
     width: 100%;
-    height: 2000px;
+    height: 1300px;
     background-color: white;
     margin-top: 1px;
     display: grid;
     grid-template-rows: auto;
+    background-color: green;
 }
 .promo-item:hover {
     box-shadow: 8px 8px 23px #ffbf00;
@@ -1003,6 +1004,10 @@ hr {
 .btn-promo_item:hover {
     background-color: #ffbf00;
     color: black;
+    font-size: 16px;
+}
+.btn-more {
+    margin-left: 110px;
     font-size: 16px;
 }
 
