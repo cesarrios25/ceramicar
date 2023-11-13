@@ -401,7 +401,9 @@ main {
     color: black;
     font-size: 16px;
 }
-
+.btn-more {
+    display: none;
+}
 /* ESTILO DEL CUARTO SECTION DEL MAIL, NOSOTROS */
 
 .container-nosotros_principal {
@@ -1008,6 +1010,9 @@ hr {
 .btn-more {
     margin-left: 110px;
     font-size: 16px;
+}
+.promo-item-3, .promo-item-6 {
+    display: none;
 }
 
 
@@ -2426,17 +2431,17 @@ hr {
     }
     .main-info-spafull h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-spafull p {
     width: 160px;
-    height: 150px;
-    margin-bottom: 5px;
+    height: 160px;
+    margin-bottom: 7px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.15;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -2466,17 +2471,17 @@ hr {
 }
 .main-info-interior-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 0.7px;
 }
 .main-info-interior-full p {
     width: 160px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -2506,17 +2511,17 @@ hr {
 }
 .main-info-chasis-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 160px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 0.94;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -3016,17 +3021,17 @@ hr {
     }
     .main-info-spafull h2 {
     font-size: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-spafull p {
     width: 210px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 5px;
     color: white;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.1;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -3056,17 +3061,17 @@ hr {
 }
 .main-info-interior-full h2 {
     font-size: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-interior-full p {
     width: 210px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 5px;
     color: white;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.1;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -3096,17 +3101,17 @@ hr {
 }
 .main-info-chasis-full h2 {
     font-size: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 210px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 5px;
     color: white;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -3514,12 +3519,12 @@ hr {
     }
     /* ESTRUCTURA DEL H1 MAIN */
     .main-container-inicio h1 {
-    font-size: 40px;
-    margin: 70px 0 100px 30px;
+    font-size: 32px;
+    margin: 75px 0 100px 190px;
     }
     /* ESTRUCTURA DEL H2 MAIN */
     .main-container-inicio h2 {
-    font-size: 37px;
+    font-size: 28px;
     text-align: center;
     color: black;
     }
@@ -3553,17 +3558,17 @@ hr {
     margin: 8px;
     }
     .main-info-ceramico h2 {
-    font-size: 29px;
+    font-size: 25px;
     margin-bottom: 8px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-ceramico p {
     width: 250px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 17px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3;
     text-align: center;
     }
@@ -3606,18 +3611,18 @@ hr {
     margin: 8px;
     }
     .main-info-spafull h2 {
-        font-size: 29px;
+        font-size: 25px;
         margin-bottom: 8px;
         color: #ffbf00;
         letter-spacing: 1px;
     }
     .main-info-spafull p {
     width: 250px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 17px;
     color: white;
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.16;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -3646,18 +3651,18 @@ hr {
     margin: 8px;
 }
 .main-info-interior-full h2 {
-    font-size: 29px;
-    margin-bottom: 8px;
+    font-size: 25px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-interior-full p {
     width: 250px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 17px;
     color: white;
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.2;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -3686,18 +3691,18 @@ hr {
     margin: 8px;
 }
 .main-info-chasis-full h2 {
-    font-size: 29px;
-    margin-bottom: 8px;
+    font-size: 25px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 250px;
-    height: 150px;
+    height: 160px;
     margin-bottom: 17px;
     color: white;
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.05;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -3726,7 +3731,7 @@ hr {
     text-align: center;
 }
 .container-history h1 {
-    font-size: 32px;
+    font-size: 28px;
     padding: 16px;
     color: #ffbf00;
 }
@@ -3734,9 +3739,9 @@ hr {
 .container-history p {
     width: 90%;
     height: 370px;
-    font-size: 25px;
+    font-size: 21px;
     padding: 0 11px 0 11px;
-    line-height: 1;
+    line-height: 1.4;
     color: black;
     margin: 0 auto;
     text-align: center;
@@ -3804,7 +3809,7 @@ hr {
     margin: auto;
 }
 .promo-item h2 {
-    font-size: 34px;
+    font-size: 28px;
     padding: 18px 2px;
     color: #ffbf00;
 }
@@ -3854,7 +3859,7 @@ hr {
     text-align: center;
 }
 .container-nosotros h1 {
-    font-size: 40px;
+    font-size: 32px;
     padding: 18px 0px 15px 0px;
     color: #BF8417;
 }
@@ -3877,11 +3882,11 @@ hr {
 }
 
 .info p {
-    width: 100%;
+    width: 80%;
     height: 350px;
-    font-size: 29px;
-    padding: 6px;
-    line-height: 1.3;
+    font-size: 21px;
+    padding: 10px 6px 6px 6px;
+    line-height: 1.8;
     color: #000000;
     margin: 0 auto;
     text-align: center;
