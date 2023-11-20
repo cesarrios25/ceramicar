@@ -5,6 +5,11 @@
 }
 a {
     text-decoration: none;
+    list-style: none;
+}
+
+.active {
+    color: #ffbf00 !important;
 }
 
 
@@ -19,11 +24,20 @@ header .container {
     align-items: center;
 }
 
-.container ul {
+.container .nav-bar-left {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    width: 80%;
+}
+.container .nav-bar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: end;
+    list-style: none;
+    width: 20%;
 }
 .container li {
     margin-right: 30px;
@@ -49,6 +63,19 @@ header .container {
     border: 0.5px solid #D9A84E;
     cursor: pointer;
 }
+.log-in {
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 6px;
+}
+.sing-up {
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 6px;
+}
+
 /* FIN DEL HEADER Y SU NAVBAR */
 
 /*  ESTRUCTURA DEL MAIN */
@@ -148,12 +175,13 @@ main {
 .btn-services {
     width: 100px;
     height: 40px;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
     border-radius: 12px;
     border: none;
     cursor: pointer;
     background-color: #daa520;
+    color: black;
 }
 .btn-services:hover {
     background-color: #F2DC99;
@@ -558,16 +586,26 @@ main {
     width: 100%;
     height: 150px;
     margin: 90px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
 }
 .info-footer h3 {
     color: #BF8417;
     font-size: 20px;
     margin-bottom: 5px;
 }
+.info-footer a {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
 .info-footer p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 4px;
+}
+.info-footer a:hover {
+    color: #ffbf00;
 }
 
 hr {
@@ -1283,18 +1321,18 @@ hr {
     .main-info-ceramico img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
     }
     .main-info-ceramico h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-ceramico p {
     width: 160px;
     height: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 22px;
     color: white;
     font-size: 14px;
     line-height: 1.3;
@@ -1305,9 +1343,9 @@ hr {
     cursor: pointer;
     }
     .btn-services {
-    width: 80px;
+    width: 84px;
     height: 30px;
-    padding: 5px;
+    padding: 8px;
     font-size: 12px;
     border-radius: 12px;
     border: none;
@@ -1336,21 +1374,21 @@ hr {
     .main-info-spafull img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
     }
     .main-info-spafull h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-spafull p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.1;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -1376,21 +1414,21 @@ hr {
 .main-info-interior-full img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
 }
 .main-info-interior-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 0.7px;
 }
 .main-info-interior-full p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.05;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -1416,21 +1454,21 @@ hr {
 .main-info-chasis-full img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
 }
 .main-info-chasis-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 0.96;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -1829,17 +1867,17 @@ hr {
     .main-info-ceramico img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
     }
     .main-info-ceramico h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-ceramico p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
@@ -1882,21 +1920,21 @@ hr {
     .main-info-spafull img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
     }
     .main-info-spafull h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
     }
     .main-info-spafull p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.17;
     text-align: center;
     }
     .main-info-spafull:hover {
@@ -1922,21 +1960,21 @@ hr {
 .main-info-interior-full img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
 }
 .main-info-interior-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 0.7px;
 }
 .main-info-interior-full p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.07;
     text-align: center;
 }
 .main-info-interior-full:hover {
@@ -1962,21 +2000,21 @@ hr {
 .main-info-chasis-full img {
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 5px;
 }
 .main-info-chasis-full h2 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     color: #ffbf00;
     letter-spacing: 1px;
 }
 .main-info-chasis-full p {
     width: 160px;
-    height: 150px;
+    height: 167px;
     margin-bottom: 5px;
     color: white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 0.97;
     text-align: center;
 }
 .main-info-chasis-full:hover {
@@ -2056,6 +2094,7 @@ hr {
     text-align: center;
     padding-bottom: 11px;
     color: white;
+    height: 390px;
 }
 
 .container-service-item-promo {
@@ -3579,9 +3618,9 @@ hr {
     cursor: pointer;
     }
     .btn-services {
-    width: 130px;
+    width: 120px;
     height: 40px;
-    padding: 5px;
+    padding: 10px;
     font-size: 17px;
     border-radius: 12px;
     border: none;

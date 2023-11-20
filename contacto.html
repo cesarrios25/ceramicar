@@ -3,28 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="./CSS/contacto.css">
     </head>
     <body>
 
         <header>
             <section class="container">
-                <ul>
+                <ul class="nav-bar-left">
                     <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./servicios.html">SERVICIOS</a></li>
-                    <li><a href="./promociones.html">PROMOCIONES</a></li>
                     <li><a href="./nosotros.html">NOSOTROS</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                    <li class="edit-item">VISITANOS</></li>
+                    <li><a href="./servicios.html">SERVICIOS</a></li>
+                    <li><a href="./promociones.html">PROMOCIONES</a></li> 
+                    <li><a class="active" href="./contacto.html">CONTACTO</a></li>
+                    <li class="edit-item"><a href="./visitanos.html">VISITANOS</a></li>
+                </ul>
+                <ul class="nav-bar-right">
+                    <li><a class="log-in" href="./login.html">Log in</a></li>
+                    <li><a class="sing-up" href="./singup.html">Sing up</a></li>
                 </ul>
             </section>
         </header>
 
-        <main></main>
+        <main>
+            <div class="container-title">
+                <h1>CONECTATE CON NOSOTROS</h1>
+                <p>Completa nuestro formulario para ponerte en contacto</p>
+            </div>
+            <div class="container-form">
+                <div class="form">
+                    
+                    <form action="">
+                        <h1>FORMULARIO DE CONTACTO</h1>
+                        <label for="nombre">
+                            <span>Nombre</span><br>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre">
+                        </label>
+                        <br>
+                        
+                        <label for="apellido">
+                            <span>Apellido</span><br>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ingresar Apellido">
+                        </label>
+                        <br>
+                        
+                        <label for="correo">
+                            <span>Email</span><br>
+                            <input type="text" name="correo" id="correo" placeholder="Ingresar Correo electronico">
+                        </label>
+                        <br>
+                        
+                        <label for="numero">
+                            <span>Telefono</span><br>
+                            <input type="number" name="numero" id="numero" placeholder="Ingresar telefono">
+                        </label>
+                        <br>
+                        
+                        <button class="btn-form" type="submit" value="Enviar">Enviar</button>
+                    </form>
+                </div>
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63457.984242716775!2d-75.65483847832029!3d6.247384300000011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290d06a13377%3A0x50c59f4ced63b9db!2sPulito%20Carwash%20Bolivariana!5e0!3m2!1ses-419!2sco!4v1699313334799!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+            </div>
+        </main>
 
-        
-
+    
         <footer>
             <div class="container">
                 <div class="container-info">
@@ -36,26 +81,26 @@
 
                         <div class="info-footer">
                             <h3>SOBRE NOSOTROS</h3>
-                            <p>Acerca de nosotros</p>
-                            <p>Trabaja con nosotros</p>
+                            <a href="" target="_blank">Acerca de nosotros</a>
+                            <a href="" target="_blank">Trabaja con nosotros</a>
                         </div>
     
                         <div class="info-footer">
                             <h3>CONTACTO</h3>
                             <p>301 547 32 78</p>
-                            <p>Carrera 38 # 26 - 19, Medellin, Antioquia</p>
+                            <a href="" target="_blank">Carrera 38 # 26 - 19, Medellin, Antioquia</a>
                         </div>
     
                         <div class="info-footer">
                             <h3>SERVICIO AL CLIENTE</h3>
-                            <p>Preguntas frecuentes</p>
-                            <p>Terminos y condiciones</p>
-                            <p>Politica de tratamientos de datos</p>
+                            <a href="" target="_blank">Preguntas frecuentes</a>
+                            <a href="" target="_blank">Terminos y condiciones</a>
+                            <a href="" target="_blank">Politica de tratamientos de datos</a>
                         </div>
     
                         <div class="info-footer">
                             <h3>MARCAS</h3>
-                            <p>Realiza tus pagos aqui</p>
+                            <a href="" target="_blank">Realiza tus pagos aqui</a>
                         </div>
                     </div>
                 </div>
@@ -68,10 +113,10 @@
                     </div>
 
                     <div class="container-social">
-                        <img src="./assets/Copia de facebook.png" alt="icon facebook">
-                        <img src="./assets/Copia de instagram.png" alt="icon instagram">
-                        <img src="./assets/Copia de twitter.png" alt="icon twitter">
-                        <img src="./assets/youtube.png" alt="icon youtube">
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./assets/Copia de facebook.png" alt="icon facebook"></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="./assets/Copia de instagram.png" alt="icon instagram"></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/Copia de twitter.png" alt="icon twitter"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./assets/youtube.png" alt="icon youtube"></a>
                     </div>
                 </div>
 

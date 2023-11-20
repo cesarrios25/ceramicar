@@ -79,93 +79,168 @@ header .container {
 /* FIN DEL HEADER Y SU NAVBAR */
 
 
+
+
+
+
+
+
 main {
     width: 100%;
-    height: 731px;
+    height: 1050px;
 }
 
-.container-title {
-    width: 80%;
-    height: 130px;
-    margin: 0 auto;
-}
-.container-title h1 {
-    font-size: 36px;
-    text-align: center;
-    padding: 15px 10px 10px 10px;
-    color: #ffbf00;
-}
-.container-title p {
-    font-size: 24px;
-    text-align: center;
-}
-/* fin contenedor titulo */
-
-
-.container-form {
+.container-gestion_pagos {
     width: 100%;
-    height: 600px;
-    display: flex;
+    height: 966px;
 }
 
-
-
-.form {
-    width: 50%;
+.container-title_pagos {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(124, 123, 123, 0.325);
+    margin-bottom: 50px;
+}
+.container-title_pagos img {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-.form h1 {
-    font-size: 26px;
-    padding-bottom: 18px;
-    color: #ffbf00;
-}
-.form span {
-    font-size: 20px;
-}
-.form input {
-    width: 380px;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
-    color: black;
-    margin-bottom: 12px;
-    font-size: 18px;
-    padding-left: 5px;
-    background-color: rgba(128, 128, 128, 0.231);
-}
-.form input:hover {
-    background-color: #ffbf00;
-    color: black;
-    border: 0.4px solid #daa520;
-}
-
-.btn-form {
-    width: 130px;
-    height: 35px;
-    border-radius: 12px;
-    border: none;
-    margin: 14px 0 0 85px;
-    font-size: 15px;
-    background-color: rgba(128, 128, 128, 0.231);
+    padding: 7px 26px;
     cursor: pointer;
 }
-.btn-form:hover {
-    background-color: #ffbf00;
-    color: black;
+
+
+.container-medios-bancos {
+    width: 100%;
+    height: 845px;
 }
 
-.location {
-    width: 50%;
+.tc-pagos {
+    width: 1230px;
+    height: 280px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.location iframe {
-    border-radius: 6px;
+.tc-pagos img {
+    width: 180px;
+    height: 180px;
+    margin-right: 12px;
+    cursor: pointer;
 }
+
+hr {
+    width: 1200px;
+    border: 1.3px solid gray;
+}
+
+.bancos-pagos {
+    width: 1230px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bancos-pagos img {
+    width: 180px;
+    height: 180px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+hr {
+    width: 1200px;
+    border: 1.3px solid gray;
+}
+
+.debito-pagos {
+    width: 1230px;
+    height: 280px;
+    margin:0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.debito-pagos img {
+    width: 180px;
+    height: 180px;
+    margin: 0px 0 0 130px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* EDICION DEL FOOTER */

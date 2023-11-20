@@ -84,42 +84,22 @@ main {
     height: 731px;
 }
 
-.container-title {
-    width: 80%;
-    height: 130px;
-    margin: 0 auto;
-}
-.container-title h1 {
-    font-size: 36px;
-    text-align: center;
-    padding: 15px 10px 10px 10px;
-    color: #ffbf00;
-}
-.container-title p {
-    font-size: 24px;
-    text-align: center;
-}
-/* fin contenedor titulo */
-
-
 .container-form {
     width: 100%;
     height: 600px;
     display: flex;
 }
-
-
-
 .form {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .form h1 {
-    font-size: 26px;
+    font-size: 36px;
     padding-bottom: 18px;
     color: #ffbf00;
+    text-align: center;
 }
 .form span {
     font-size: 20px;
@@ -130,8 +110,8 @@ main {
     border-radius: 8px;
     border: none;
     color: black;
-    margin-bottom: 12px;
-    font-size: 18px;
+    margin-bottom: 23px;
+    font-size: 16px;
     padding-left: 5px;
     background-color: rgba(128, 128, 128, 0.231);
 }
@@ -140,31 +120,24 @@ main {
     color: black;
     border: 0.4px solid #daa520;
 }
-
+.recuperar-contraseña {
+    font-size: 16px;
+    margin-left: 130px;
+    color: #daa520;
+}
 .btn-form {
-    width: 130px;
-    height: 35px;
-    border-radius: 12px;
+    width: 380px;
+    height: 50px;
+    border-radius: 8px;
     border: none;
-    margin: 14px 0 0 85px;
+    margin-top: 12px;
     font-size: 15px;
-    background-color: rgba(128, 128, 128, 0.231);
+    background-color: #ffbf00;
     cursor: pointer;
 }
 .btn-form:hover {
-    background-color: #ffbf00;
+    background-color: #daa520;
     color: black;
-}
-
-.location {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.location iframe {
-    border-radius: 6px;
 }
 
 

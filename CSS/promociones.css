@@ -5,7 +5,14 @@
 }
 a {
     text-decoration: none;
+    list-style: none;
 }
+
+.active {
+    color: #ffbf00 !important;
+}
+
+
 
 /*  INICIO DEL HEADER CON SU NAVBAR */
 header .container {
@@ -16,11 +23,21 @@ header .container {
     justify-content: center;
     align-items: center;
 }
-.container ul {
+
+.container .nav-bar-left {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    width: 80%;
+}
+.container .nav-bar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: end;
+    list-style: none;
+    width: 20%;
 }
 .container li {
     margin-right: 30px;
@@ -38,19 +55,174 @@ header .container {
     color: white;
 }
 .container li a:hover {
-    color: #D9A84E;
+    color: #ffbf00;
+    font-size: 15px;
 }
 .edit-item:hover {
-    color: #D9A84E;
+    color: #ffbf00;
     border: 0.5px solid #D9A84E;
     cursor: pointer;
 }
+.log-in {
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 6px;
+}
+.sing-up {
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 6px;
+}
+
 /* FIN DEL HEADER Y SU NAVBAR */
 
+/*  ESTRUCTURA DEL MAIN */
+main {
+    width: 100%;
+    height: auto;
+}
+/* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+/* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+.main-container {
+    width: 100%;
+    height: 1050px;
+    position: relative;
+}
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1600px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 40px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+    margin-top: 8px;
+}
+strong{
+    color:#ffbf00;
+}
+.containers-service_promo {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 390px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: 34px 54px 18px 14px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.promo-item h2 {
+    font-size: 21px;
+    padding: 12px 2px ;
+    color: #ffbf00;
+}
+.promo-item p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+.promo-item img {
+    width: 150px;
+    height: 150px;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
 
 
+/* ESTILO AL QUINTO SECTION, CONTACTO */
 
+.container-contacto_principal {
+    width: 100%;
+    height:300px;
+    background-color: black;
+    display: flex;
+}
 
+.img-contacto {
+    width: 50%;
+    height: 300px;
+    background-color: green;
+    /* background-image: url(../assets/asistencia.jpeg); */
+    background-image: url(../assets/was.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.container-contacto {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.container-contacto h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 30px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
 
 /* EDICION DEL FOOTER */
 .container {
@@ -88,15 +260,2799 @@ header .container {
     width: 100%;
     height: 150px;
     margin: 90px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
 }
 .info-footer h3 {
     color: #BF8417;
     font-size: 20px;
     margin-bottom: 5px;
 }
+.info-footer a {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
 .info-footer p {
     color: white;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.info-footer a:hover {
+    color: #ffbf00;
+}
+
+hr {
+    width: 80%;
+    height: 0.2px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+
+
+/*  RESPONSIVE DE LA PAGINA */
+
+/*    MEDIDAS 390 A 480     ---- DISPOSITIVOS MOVILES ----    */
+@media (min-width: 390px) and (max-width: 480px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 880px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 16px;
+    margin: 33px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 16px;
+    border: none;
+    top: -62px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
     font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 202px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 16px;
+    top: 248px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 0.7px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 202px;
+    top: 248px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 750px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 261px;
+}
+.img-history {
+    width: 390px;
+    height: 260px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 4132px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 28px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo p {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 2000px;
+    background-color: white;
+    margin-top: 1px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 340px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 26px;
+    padding: 11px;
+    color: #ffbf00;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 705px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+/* MEDIDA 481 A 768     ---- DISPOSITIVOS IPADS, TABLETS ----     */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 578px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 19px;
+    margin: 33px 0 40px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 19px;
+    border: none;
+    top: -62px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 205px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 390px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 0.7px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 170px;
+    height: 290px;
+    position: absolute;
+    left: 575px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 640px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 338px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 21px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 300px;
+}
+.img-history {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1518px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 28px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo p {
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 24px;
+    color: white;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 240px;
+    height: 615px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 20px;
+    padding: 3px 2px;
+    color: #ffbf00;
+}
+.promo-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 530px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 16px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    height: 327px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: none;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 201px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: none;
+}
+
+.container-contacto {
+    width: 100%;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 30px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+/* MEDIDA 769 A 1024     ---- PANTALLAS PEQUEÑAS, LAPTOS ----     */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 640px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 360px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 70px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 25px;
+    margin: 50px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 282px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 57px;
+    border: none;
+    top: -62px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 292px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 527px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 0.7px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 762px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 403px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 387px;
+}
+.img-history {
+    width: 100%;
+    height: 341px;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1480px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 28px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 11px;
+    color: white;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 687px;
+    background-color: white;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 315px;
+    height: 630px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 26px;
+    padding: 3px 2px;
+    color: #ffbf00;
+}
+.promo-item img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 530px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 20px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 375px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 21px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: flex;
+    width: 50%;
+    height: 375px;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: flex;
+    width: 50%;
+}
+
+.container-contacto {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 45px 0px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+/* MEDIDA 1025 A 1200     ---- PC ESCRITORIO, PANTALLAS GRANDES ----     */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    header .container {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 5.5px;
+        font-size: 10px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 10px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 10px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 640px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 360px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 70px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 25px;
+    margin: 50px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 282px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 64px;
+    border: none;
+    top: -62px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 347px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    }
+    .main-info-spafull h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 631px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-interior-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 0.7px;
+}
+.main-info-interior-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 220px;
+    height: 290px;
+    position: absolute;
+    left: 915px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.main-info-chasis-full h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 160px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 403px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 387px;
+}
+.img-history {
+    width: 100%;
+    height: 341px;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1480px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 28px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 11px;
+    color: white;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 687px;
+    background-color: white;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 315px;
+    height: 630px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 26px;
+    padding: 3px 2px;
+    color: #ffbf00;
+}
+.promo-item img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 530px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 20px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 375px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 21px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: flex;
+    width: 50%;
+    height: 375px;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: flex;
+    width: 50%;
+}
+
+.container-contacto {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 45px 0px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+
+.container-info {
+    display: none;
+}
+
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+/* MEDIDA 1201 A 1440     ---- PANTALLAS EXTRAGRANDES ----     */
+@media (min-width: 1201px) and (max-width: 1440px) {
+
+    header .container {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 20.5px;
+        font-size: 15px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 14px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 15px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 640px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 360px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 70px
+    }
+    .main-logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 25px;
+    margin: 50px 0 50px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 282px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    left: 88px;
+    border: none;
+    top: -62px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 52px;
+    height: 52px;
+    margin: 8px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 210px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 92px;
+    height: 35px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    left: 425px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 52px;
+    height: 52px;
+    margin: 8px;
+    }
+    .main-info-spafull h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 210px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    left: 763px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 52px;
+    height: 52px;
+    margin: 8px;
+}
+.main-info-interior-full h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 210px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 250px;
+    height: 310px;
+    position: absolute;
+    left: 1101px;
+    top: -62px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 52px;
+    height: 52px;
+    margin: 8px;
+}
+.main-info-chasis-full h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 210px;
+    height: 150px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 403px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 28px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    font-size: 19px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 100%;
+    height: 387px;
+}
+.img-history {
+    width: 100%;
+    height: 341px;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1480px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 28px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 11px;
+    color: white;
+}
+
+.container-service-item-promo {
+    width: 100%;
+    height: 687px;
+    background-color: white;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 315px;
+    height: 630px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 26px;
+    padding: 3px 2px;
+    color: #ffbf00;
+}
+.promo-item img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+.btn-promo_item {
+    width: 120px;
+    height: 35px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 530px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 36px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 20px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 375px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    font-size: 21px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: flex;
+    width: 50%;
+    height: 375px;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: flex;
+    width: 50%;
+}
+
+.container-contacto {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 26px;
+    text-align: center;
+    padding: 45px 0px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 306px;
+    background-color: black;
+}
+
+.container-info {
+    width: 100%;
+    height: 200px;
+}
+.tittle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #BF8417;
+}
+.tittle h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.container-info-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-footer {
+    width: 100%;
+    height: 150px;
+    margin: 90px 0px 20px 30px;
+}
+.info-footer h3 {
+    color: #BF8417;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.info-footer p {
+    color: white;
+    font-size: 18px;
     margin-bottom: 4px;
 }
 
@@ -137,3 +3093,614 @@ hr {
     margin-right: 30px;
     filter: invert();
 }
+}
+
+/* MEDIDA 1440 A 1680     ---- PANTALLAS EXTRAGRANDES ----     */
+@media (min-width: 1441px) and (max-width: 1680px) {
+
+    header .container {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container li {
+        margin-right: 20.5px;
+        font-size: 15px;
+        font-weight: normal;
+        color: white;
+    }
+    .container li a {
+        color: white;
+    }
+    .container .edit-item {
+        border: 1px solid white;
+        padding: 8px;
+        font-size: 14px;
+        color: white;
+    }
+    .container li a:hover {
+        color: #ffbf00;
+        font-size: 15px;
+    }
+    .edit-item:hover {
+        color: #ffbf00;
+        border: 0.5px solid #ffbf00;
+        cursor: pointer;
+    }
+    /* FIN DEL HEADER Y SU NAVBAR */
+
+
+    /* MAIN */
+
+    /*  ESTRUCTURA DEL MAIN */
+    main {
+    width: 100%;
+    height: auto;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR 1 DEL MAIN */
+
+    /* ESTRUCTURA DEL CONTENEDOR PRINCIPAL */
+    .main-container {
+    width: 100%;
+    height: 850px;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR FONDO */
+    .main-container-inicio {
+    width: 100%;
+    height: 566px;
+    background-image: url(../assets/fondo.png);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    }
+    /* ESTRUCTURA DEL CONTENEDOR LOGO */
+    .main-logo {
+    width: 115px;
+    height: 115px;
+    margin-left: 130px
+    }
+    .main-logo img {
+        width: 115px;
+        height: 115px;
+        margin-left: auto;
+        opacity: 0.6;
+    }
+    /* ESTRUCTURA DEL H1 MAIN */
+    .main-container-inicio h1 {
+    font-size: 40px;
+    margin: 70px 0 100px 30px;
+    }
+    /* ESTRUCTURA DEL H2 MAIN */
+    .main-container-inicio h2 {
+    font-size: 37px;
+    text-align: center;
+    color: black;
+    }
+
+    /* ESTRUCTURA DEL CONTENEDOR SERVICIOS */
+    .main-container-services {
+    width: 100%;
+    height: 284px;
+    background-color: black;
+    position: relative;
+    }
+
+    /* ESTILO CONTENEDOR CERAMICO */
+    .main-info-ceramico {
+    width: 310px;
+    height: 360px;
+    position: absolute;
+    left: 136px;
+    border: none;
+    top: -105px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-ceramico img {
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    }
+    .main-info-ceramico h2 {
+    font-size: 29px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+    }
+    .main-info-ceramico p {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-ceramico:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+    .btn-services {
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #daa520;
+    }
+    .btn-services:hover {
+        background-color: #F2DC99;
+    }
+
+/* ESTILO CONTENEDOR SPA FULL */
+    .main-info-spafull {
+    width: 310px;
+    height: 360px;
+    position: absolute;
+    left: 501px;
+    top: -105px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+    }
+    .main-info-spafull img {
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    }
+    .main-info-spafull h2 {
+        font-size: 29px;
+        margin-bottom: 8px;
+        color: #ffbf00;
+        letter-spacing: 1px;
+    }
+    .main-info-spafull p {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    }
+    .main-info-spafull:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+    }
+
+/* ESTILO CONTENEDOR INTERIOR FULL */
+    .main-info-interior-full {
+    width: 310px;
+    height: 360px;
+    position: absolute;
+    left: 869px;
+    top: -105px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-interior-full img {
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+}
+.main-info-interior-full h2 {
+    font-size: 29px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-interior-full p {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-interior-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+
+/* ESTILO CONTENEDOR CHASIS FULL */
+.main-info-chasis-full {
+    width: 310px;
+    height: 360px;
+    position: absolute;
+    left: 1234px;
+    top: -105px;
+    border: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 1px 1px 12px #daa520;
+}
+.main-info-chasis-full img {
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+}
+.main-info-chasis-full h2 {
+    font-size: 29px;
+    margin-bottom: 8px;
+    color: #ffbf00;
+    letter-spacing: 1px;
+}
+.main-info-chasis-full p {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+.main-info-chasis-full:hover {
+    box-shadow: 7px 2px 14px #daa520;
+    cursor: pointer;
+}
+/* FIN ESTILOS CONTENEDOR MAIN Y SERVICES */
+
+
+/* ESTILO DEL CONTENEDOR 2 DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL SECTION 2 */
+.main-container_history {
+    width: 100%;
+    height: 460px;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+/* ESTILO DIV IZQUIERDA */
+.container-history {
+    width: 50%;
+    height: 460px;
+    background-color: white;
+    text-align: center;
+}
+.container-history h1 {
+    font-size: 32px;
+    padding: 16px;
+    color: #ffbf00;
+}
+
+.container-history p {
+    width: 90%;
+    height: 370px;
+    font-size: 25px;
+    padding: 0 11px 0 11px;
+    line-height: 1;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ESTILO DIV DERECHA */
+.container-foto {
+    width: 50%;
+    height: 440px;
+}
+.img-history {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 24px;
+    left: -30px;
+    background-image: url(../assets/historia.jpeg);
+    background-position: center center;
+    background-image: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* ESTILO DE LA TERCERA SECTION DEL MAIN */
+
+/* CONTENEDOR PRINCIPAL PROMO */
+.container-promo {
+    width: 100%;
+    height: 1550px;
+    background-color: black;
+}
+.container-promo h1 {
+    font-size: 32px;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+    color: #BF8417;
+}
+.container-promo h4 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 11px;
+    color: #BF8417;
+}
+.container-service-item-promo {
+    width: 100%;
+    height: 687px;
+    background-color: white;
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.promo-item:hover {
+    box-shadow: 8px 8px 23px #ffbf00;
+}
+.promo-item {
+    width: 480px;
+    height: 630px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto;
+}
+.promo-item h2 {
+    font-size: 34px;
+    padding: 18px 2px;
+    color: #ffbf00;
+}
+.container-promo p {
+    width: 420px;
+    height: 345px;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 11px;
+    color: white;
+    
+}
+.promo-item img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 12px;
+}
+.btn-promo_item {
+    width: 135px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #F2DC99;
+}
+.btn-promo_item:hover {
+    background-color: #ffbf00;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+/* ESTILO DEL CUARTO SECTION DEL MAIN, NOSOTROS */
+
+.container-nosotros_principal {
+    width: 100%;
+    height: 600px;
+}
+.container-nosotros {
+    width: 100%;
+    height: 155px;
+    background-color: black;
+    text-align: center;
+}
+.container-nosotros h1 {
+    font-size: 40px;
+    padding: 18px 0px 15px 0px;
+    color: #BF8417;
+}
+.container-nosotros p {
+    font-size: 24px;
+    color: #BF8417;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO QUIENES SOMOS */
+.container-nosotros_info {
+    width: 100%;
+    height: 375px;
+    background-color: white;
+    display: flex;
+}
+.info {
+    width: 50%;
+    height: 443px;
+    text-align: center;
+}
+
+.info p {
+    width: 100%;
+    height: 350px;
+    font-size: 29px;
+    padding: 6px;
+    line-height: 1.3;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ESTILO AL CONTENEDOR INTERNO NOSOTROS, FOTO */
+.img-nosotros {
+    display: flex;
+    width: 50%;
+    height: 443px;
+}
+
+/* ESTILO AL QUINTO SECTION, CONTACTO */
+
+.container-contacto_principal {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.img-contacto {
+    display: flex;
+    width: 50%;
+}
+
+.container-contacto {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-contacto h2 {
+    font-size: 32px;
+    text-align: center;
+    padding: 49px 0px;
+    color: #ffbf00;
+}
+
+.btn-contacto {
+    width: 210px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: #ffbf00;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 3px 4px 15px black;
+}
+.btn-contacto:hover {
+    width: 220px;
+    height: 60px;
+    background-color: #F2DC99;
+    color: black;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+
+/* EDICION DEL FOOTER */
+.container {
+    width: 100%;
+    height: 306px;
+    background-color: black;
+}
+
+.container-info {
+    width: 100%;
+    height: 200px;
+}
+.tittle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #BF8417;
+}
+.tittle h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.container-info-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-footer {
+    width: 100%;
+    height: 150px;
+    margin: 90px 0px 20px 30px;
+}
+.info-footer h3 {
+    color: #BF8417;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.info-footer p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+hr {
+    width: 80%;
+    height: 0.2px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* SEGUNDA SECTION FOOTER */
+.container-section-two {
+    width: 100%;
+    height: 106px;
+}
+.container-logo {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo img {
+    width: 55px;
+    height: 55px;
+}
+.container-social {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container-social img {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    filter: invert();
+}
+}
+
+
+
+
+
+
+
+
