@@ -30,7 +30,7 @@ header .container {
     align-items: center;
     list-style: none;
     width: 80%;
-}
+} 
 .container .nav-bar-right {
     display: flex;
     justify-content: flex-end;
@@ -74,7 +74,8 @@ header .container {
     border: 1px solid white;
     border-radius: 13px;
     padding: 6px;
-}
+} *
+
 
 /* FIN DEL HEADER Y SU NAVBAR */
 
@@ -666,7 +667,8 @@ hr {
         align-items: center;
     }
     
-    .container ul {
+    .nav-bar-left {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -695,6 +697,15 @@ hr {
         color: #ffbf00;
         border: 0.5px solid #ffbf00;
         cursor: pointer;
+    }
+    .nav-bar-right {
+        display: none;
+    }
+    .log-in {
+        display: none;
+    }
+    .sing-up {
+        display: none;
     }
     /* FIN DEL HEADER Y SU NAVBAR */
 
